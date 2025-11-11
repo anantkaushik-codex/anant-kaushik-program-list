@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    int arr[n], copy[n];
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    for(i = 0; i < n; i++)
+        copy[i] = arr[i];
+
+    printf("Copied array elements:\n");
+    for(i = 0; i < n; i++)
+        printf("%d ", copy[i]);
+    printf("\n");
+
+    return 0;
+}
